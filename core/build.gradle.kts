@@ -4,10 +4,6 @@ plugins {
     `paper-convention`
 }
 
-dependencies {
-    implementation(libs.bundles.kotlin)
-}
-
 tasks.shadowJar {
     minimize()
 }
