@@ -1,3 +1,3 @@
-rootProject.name = "paper-kotlin"
+rootProject.name = "paperKotlin"
 
 include("core", "paper")
