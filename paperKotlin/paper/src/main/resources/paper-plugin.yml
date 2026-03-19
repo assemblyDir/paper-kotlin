@@ -5,4 +5,4 @@ authors: [ alexthegoood ]
 load: STARTUP
 main: ${group}.PaperKotlin
 api-version: ${minecraft_version}
-website: https://github.com/assemblyDir/paperKotlin
+website: https://github.com/assemblyorg/paperKotlin
