@@ -1,6 +1,6 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar.Companion.shadowJar
-import gradle.kotlin.dsl.accessors._461acbb0a98981b3b2e619ab73662b43.jar
-import gradle.kotlin.dsl.accessors._461acbb0a98981b3b2e619ab73662b43.kotlinSourcesJar
+import gradle.kotlin.dsl.accessors._b332154bd1a9d476469efdcd6b9bb8ba.jar
+import gradle.kotlin.dsl.accessors._b332154bd1a9d476469efdcd6b9bb8ba.kotlinSourcesJar
 
 plugins {
     `maven-publish`

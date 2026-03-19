@@ -7,7 +7,7 @@ import org.bukkit.entity.Player
 import org.bukkit.potion.PotionEffect
 
 /**
- * Adds a potion effect to the living entity.
+ * Wrapper for [LivingEntity.addPotionEffect]
  *
  * @receiver [LivingEntity] instance
  * @param name [Key] of the potion effect type
@@ -27,7 +27,21 @@ fun LivingEntity.potionEffect(
 }
 
 /**
- * Adds a potion effect to the living entity.
+ * Wrapper for [LivingEntity.removePotionEffect]
+ *
+ * @receiver [LivingEntity] instance
+ * @param name [Key] of the potion effect type to remove
+ * @throws IllegalArgumentException if the potion effect type is not recognized
+ */
+fun LivingEntity.potionEffectRemove(
+    name: Key,
+) {
+    val potionEffectType = Registry.POTION_EFFECT_TYPE.get(name) ?: throw IllegalArgumentException("Potion effect $name not recognized!")
+    removePotionEffect(potionEffectType)
+}
+
+/**
+ * Wrapper for [LivingEntity.addPotionEffect]
  *
  * @receiver [LivingEntity] instance
  * @param name [Key] of the potion effect type
@@ -49,7 +63,7 @@ fun LivingEntity.potionEffect(
 }
 
 /**
- * Adds a potion effect to the living entity.
+ * Wrapper for [LivingEntity.addPotionEffect]
  *
  * @receiver [LivingEntity] instance
  * @param name [Key] of the potion effect type
@@ -73,7 +87,7 @@ fun LivingEntity.potionEffect(
 }
 
 /**
- * Adds a potion effect to the living entity.
+ * Wrapper for [LivingEntity.addPotionEffect]
  *
  * @receiver [LivingEntity] instance
  * @param name [Key] of the potion effect type
