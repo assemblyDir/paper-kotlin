@@ -25,6 +25,10 @@ tasks.build {
     )
 }
 
+tasks.withType<Zip>().configureEach {
+    destinationDirectory = rootProject.layout.buildDirectory.dir("all")
+}
+
 tasks.shadowJar {
     archiveClassifier = "shadow"
 }
